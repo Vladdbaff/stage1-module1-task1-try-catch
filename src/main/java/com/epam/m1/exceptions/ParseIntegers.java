@@ -25,9 +25,8 @@ public class ParseIntegers {
             try {
                 int number = Integer.parseInt(next);
                 sum += number;
-                tempString.append(number).append(" ");
             } catch (NumberFormatException e) {
-                tempString.append(next).append(" ");
+                tempString.append(" ").append(next);
             }
         }
         justWords = tempString.toString();
